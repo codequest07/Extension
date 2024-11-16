@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Transaction Monitor</title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <div class="container">
+          <div class="header">
+               <h1>Transaction Monitor</h1>
+          </div>
+
+          <div id="pendingTransactions">
+               <!-- Pending transactions will be inserted here -->
+          </div>
+
+          <div id="transactionPopup" class="hidden">
+               <div class="popup-content">
+                    <h2>New Transaction Detected</h2>
+                    <div class="transaction-details">
+                         <p><strong>Type:</strong> <span id="txType"></span></p>
+                         <p><strong>From:</strong> <span id="txFrom"></span></p>
+                         <p><strong>To:</strong> <span id="txTo"></span></p>
+                         <p><strong>Amount:</strong> <span id="txAmount"></span></p>
+                         <p><strong>Gas Price:</strong> <span id="txGas"></span></p>
+                    </div>
+                    <div class="action-buttons">
+                         <button id="approveBtn" class="btn approve">Approve</button>
+                         <button id="rejectBtn" class="btn reject">Reject</button>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <script src="popup.js"></script>
+</body>
+
+</html>
